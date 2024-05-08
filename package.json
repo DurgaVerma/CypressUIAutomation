@@ -1,0 +1,25 @@
+{
+  "name": "cypressautomation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "completeTest": "npx cypress run --record --key 392daa19-a985-4bf0-a174-07744d923fa2 --spec cypress/integration/tests/hBLoginTest.js --headed --browser chrome",
+    "headtest": "npx cypress run --headed",
+    "recordTest": "npx cypress run --record --key 392daa19-a985-4bf0-a174-07744d923fa2",
+    "chromeTest": "npx run test --browser chrome"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^13.8.1",
+    "cypress-mochawesome-reporter": "^3.8.2"
+  },
+  "dependencies": {
+    "cypress-multi-reporters": "^1.6.4",
+    "mocha": "^10.4.0",
+    "mochawesome": "^7.1.3",
+    "mochawesome-merge": "^4.3.0",
+    "mochawesome-report-generator": "^6.2.0"
+  }
+}
